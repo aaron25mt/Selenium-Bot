@@ -23,7 +23,7 @@ def changeEnrichment(link, possibleEnrichments):
 	browser.find_by_name("Submit").first.click()
 
 if __name__ == "__main__":
-	login("athomas", "payton")
+	login(username, password)
 	links = getEnrichments()
 	for link in links:
 		changeEnrichment(link, ["food", "Journalism Club: Radio and Newspaper Service Project", "Radio Production", "Young Life Club", "Astronomy / Anatomy & Physiology Tutoring", "H2O"])
